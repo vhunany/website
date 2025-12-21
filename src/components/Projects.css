@@ -1,0 +1,25 @@
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Centers it vertically on the screen */
+  text-align: center;
+  padding: 40px;
+}
+
+.construction-message h1 {
+  font-size: 3.5rem; /* Makes it very big */
+  font-weight: 900;   /* Extra bold */
+  margin: 10px 0;
+  color: #1E2EE6;    /* Using blue hover color for impact */
+  letter-spacing: -1px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* Optional: Make it slightly smaller on mobile so it doesn't overflow */
+@media (max-width: 768px) {
+  .construction-message h1 {
+    font-size: 2rem;
+  }
+}

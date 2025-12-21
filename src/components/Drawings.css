@@ -1,0 +1,87 @@
+#drawings {
+  margin: 0;
+  padding: 40px; /* Added padding so it's not touching the sidebar */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#drawings h2 {
+  margin-top: 0; 
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.drawings-statement {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 990px;
+}
+
+/* Style for the Kindergarten Drawing */
+.featured-drawing-container {
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+
+.featured-drawing {
+  width: 185%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.drawings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 20px;
+  grid-auto-flow: dense; 
+}
+
+.drawing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ID 1: Spans two rows vertically and two columns */
+.drawing-card.tall {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+/* ID 7: Spans two columns horizontally */
+.drawing-card.wide {
+  grid-column: span 2;
+}
+
+.drawing-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  display: block;
+}
+
+/* Fix for tall/wide logic to ensure they fill the grid space */
+.drawing-card.tall .drawing-image,
+.drawing-card.wide .drawing-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.drawing-image:hover {
+  transform: scale(1.02);
+}
+
+.drawing-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}

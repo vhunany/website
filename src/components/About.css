@@ -1,0 +1,22 @@
+#about {
+  max-width: 800px; /* Prevents text from stretching too wide */
+  margin: 0 auto;  /* Centers the content within the main-content area */
+  padding-top: 20px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.about-list {
+  line-height: 1.8; /* Adds breathing room between the lines */
+}
+
+/* This targets the container holding the ParticleText */
+.about-list br {
+  margin-bottom: 15px;
+  display: block;
+  content: "";
+}

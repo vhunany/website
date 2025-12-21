@@ -1,0 +1,12 @@
+/* src/components/ParticleText.css */
+.particle-text-container {
+  display: inline-block;
+  cursor: pointer;
+  /* Ensure the container doesn't collapse */
+  min-height: 30px; 
+  vertical-align: middle;
+}
+
+.particle-text-container canvas {
+  display: block;
+}

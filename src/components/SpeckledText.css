@@ -1,0 +1,33 @@
+SpeckledText.css file
+.speckled-text {
+  color: black; /* speckles start black */
+  background: repeating-linear-gradient(
+    45deg,
+    black 0px,
+    black 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: inline-block;
+  line-height: 1.5em;
+}
+
+.speckled-text.revealed {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
