@@ -18,7 +18,7 @@ export default function Drawings() {
       
       <div className="drawings-statement-container">
         <p className="drawings-statement">
-          I started drawing at a very young age—before elementary school. It has been one of the few hobbies that has stuck with me for a long time. A few days before I started elementary school, we went to meet our teacher. She asked me a couple of questions, and then we were given a piece of paper to draw on. I drew a princess, as seen in the following picture dated 9/2010.
+          I started drawing at a very young age—before elementary school. It has been one of the few hobbies that has stuck with me for a long time. A few days before I started elementary school, I went to meet my teacher. She asked me a couple of questions, and then I was given a piece of paper to draw on. I drew a princess, as seen in the following picture dated 9/2010.
         </p>
         
         <p className="drawings-statement">
