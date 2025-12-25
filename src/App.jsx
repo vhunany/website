@@ -4,10 +4,10 @@ import Sidebar from "./components/Sidebar";
 import Drawings from "./components/Drawings";
 import About from "./components/About"; 
 import Projects from "./components/Projects"; 
-import Contact from "./components/Contact"; // 1. ADD THIS LINE
-import "./App.css";
+import Contact from "./components/Contact"; 
+import Home from "./components/Home";
 
-// 2. DELETE the line: const Contact = () => ... (Remove it completely)
+import "./App.css";
 
 export default function App() {
   return (
@@ -17,9 +17,10 @@ export default function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<About />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/projects" element={<Projects />} /> 
             <Route path="/drawings" element={<Drawings />} />
-            <Route path="/contact" element={<Contact />} /> {/* This now uses the file */}
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

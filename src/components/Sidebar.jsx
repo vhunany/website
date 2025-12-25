@@ -5,9 +5,10 @@ import "./Sidebar.css";
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      <div className="sidebar-name">
+      {/* CHANGED: Wrapped name in Link to /home */}
+      <Link to="/home" className="sidebar-name">
         Viktorya Hunanyan
-      </div>
+      </Link>
 
       <nav className="sidebar-nav">
         <Link to="/">About</Link>
@@ -16,7 +17,6 @@ export default function Sidebar() {
         <Link to="/contact">Contact</Link>
       </nav>
 
-      {/* This container stays at the bottom */}
       <div className="sidebar-footer">
         <img src="/website-icon.png" alt="footer-icon" className="sidebar-image" />
       </div>
